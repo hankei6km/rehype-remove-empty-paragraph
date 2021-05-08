@@ -11,22 +11,17 @@
   "bugs": {
     "url": "https://github.com/hankei6km/rehype-remove-empty-paragraph/issues"
   },
-  "keywords": [
-    "rehype",
-    "plugin",
-    "remove"
-  ],
+  "keywords": ["rehype", "plugin", "remove"],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
     "test": "jest",
     "clean": "rm dist/*",
     "upgrade-interactive": "npm-check --update",
-    "csb:test": "npm test -- --runInBand --watchAll"
+    "csb:test": "npm test -- --runInBand --watchAll",
+    "example": "tsc && ts-node example/example.ts"
   },
   "dependencies": {
     "unified": "^9.2.1"
