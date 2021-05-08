@@ -1,9 +1,21 @@
 {
-  "name": "my-starter-ts-npm-cli-and-lib",
-  "version": "0.1.2-0",
-  "description": "Typescript で CLI とライブラリの npm パッケージを作成するためのスターター。",
+  "name": "rehype-remove-empty-paragraph",
+  "version": "0.1.0",
+  "description": "rehype plugin that remove `<p></p>` / `<p><br></p>`.",
   "license": "MIT",
-  "keywords": [],
+  "author": "hankei6km <hankei6km@gmail.com> (https://github.com/hankei6km)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hankei6km/rehype-remove-empty-paragraph.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hankei6km/rehype-remove-empty-paragraph/issues"
+  },
+  "keywords": [
+    "rehype",
+    "plugin",
+    "remove"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -13,8 +25,6 @@
     "count": "dist/main.js"
   },
   "scripts": {
-    "start": "tsc && node dist/main.js",
-    "start:watch": "nodemon --watch src --ext ts --exec ts-node src/main.ts",
     "build": "tsc",
     "test": "jest",
     "clean": "rm dist/*",
