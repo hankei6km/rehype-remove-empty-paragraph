@@ -21,9 +21,6 @@
   "files": [
     "dist"
   ],
-  "bin": {
-    "count": "dist/main.js"
-  },
   "scripts": {
     "build": "tsc",
     "test": "jest",
@@ -31,9 +28,7 @@
     "upgrade-interactive": "npm-check --update",
     "csb:test": "npm test -- --runInBand --watchAll"
   },
-  "dependencies": {
-    "yargs": "^16.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^14.14.28",
