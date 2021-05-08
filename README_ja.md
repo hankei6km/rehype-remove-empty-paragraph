@@ -1,6 +1,6 @@
 # rehype-remove-empty-paragraph
 
-[rehype](https://github.com/rehypejs/rehype) plugin that remove `<p></p>` / `<p><br></p>`.
+`<p></p>` / `<p><br></p>` を削除する [rehype](https://github.com/rehypejs/rehype).
 
 ## Install
 
@@ -44,12 +44,12 @@ yield:
 
 ### `rehypeRemoveEmptyParagraph([options])`
 
-Remove `<p></p>` / `<p><br></p>`.
-Paragraph is only supported `root / paragraph` hierarchy.
+`<p></p>` / `<p><br></p>` を削除する.
+Paragraph は `root / paragraph` 階層のみサポートしている.
 
 #### options.trimBr
 
-Trim leading/trailing `<br>` in Paragraph.
+Paragraph 内の先頭と末尾の `<br>` を取り除く.
 
 
 ## License
