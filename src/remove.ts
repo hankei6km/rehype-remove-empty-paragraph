@@ -5,7 +5,7 @@ type RehypeRemoveEmptyParagraphOptions = {
   trimBr?: boolean;
 };
 
-function hastTrimBr(tree: Root): void {
+export function hastTrimBr(tree: Root): void {
   tree.children.forEach((c) => {
     if (c.type === 'element' && c.tagName === 'p') {
       const top = c.children.findIndex(
@@ -27,7 +27,7 @@ function hastTrimBr(tree: Root): void {
   });
 }
 
-function hastRemoveEmptyParagraph(tree: Root): void {
+export function hastRemoveEmptyParagraph(tree: Root): void {
   tree.children = tree.children.filter((c) => {
     if (c.type === 'element' && c.tagName === 'p') {
       if (c.children.length === 0) {
