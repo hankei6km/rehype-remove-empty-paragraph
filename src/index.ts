@@ -1,2 +1,3 @@
-import countChars from './count';
-export { countChars };
+import rehypeRemoveEmptyParagraph from './remove';
+
+export default rehypeRemoveEmptyParagraph;
