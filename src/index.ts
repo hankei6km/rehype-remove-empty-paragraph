@@ -1,7 +1,12 @@
 import rehypeRemoveEmptyParagraph, {
+  RehypeRemoveEmptyParagraphOptions,
   hastTrimBr,
   hastRemoveEmptyParagraph
 } from './remove';
 
-export { hastTrimBr, hastRemoveEmptyParagraph };
+export {
+  RehypeRemoveEmptyParagraphOptions,
+  hastTrimBr,
+  hastRemoveEmptyParagraph
+};
 export default rehypeRemoveEmptyParagraph;

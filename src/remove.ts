@@ -1,7 +1,7 @@
 import { Plugin, Transformer } from 'unified';
 import { Node, Root } from 'hast';
 
-type RehypeRemoveEmptyParagraphOptions = {
+export type RehypeRemoveEmptyParagraphOptions = {
   trimBr?: boolean;
 };
 
