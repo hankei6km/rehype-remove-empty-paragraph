@@ -1,6 +1,6 @@
 {
   "name": "rehype-remove-empty-paragraph",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "description": "rehype plugin that remove `<p></p>` / `<p><br></p>`.",
   "license": "MIT",
   "author": "hankei6km <hankei6km@gmail.com> (https://github.com/hankei6km)",
@@ -11,10 +11,16 @@
   "bugs": {
     "url": "https://github.com/hankei6km/rehype-remove-empty-paragraph/issues"
   },
-  "keywords": ["rehype", "plugin", "remove"],
+  "keywords": [
+    "rehype",
+    "plugin",
+    "remove"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest",
