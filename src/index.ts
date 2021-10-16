@@ -2,7 +2,7 @@ import rehypeRemoveEmptyParagraph, {
   RehypeRemoveEmptyParagraphOptions,
   hastTrimBr,
   hastRemoveEmptyParagraph
-} from './remove';
+} from './remove.js';
 
 export {
   RehypeRemoveEmptyParagraphOptions,
