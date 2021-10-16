@@ -12,11 +12,11 @@ export function hastTrimBr(tree: Root): void {
         (v) => v.type !== 'element' || v.tagName !== 'br'
       );
       let bottom = c.children.length - 1;
-      while (
-        bottom >= 0 &&
-        c.children[bottom].type === 'element' &&
-        c.children[bottom].tagName === 'br'
-      ) {
+      while (bottom >= 0) {
+        const e = c.children[bottom];
+        if (e.type !== 'element' || e.tagName !== 'br') {
+          break;
+        }
         bottom--;
       }
       c.children = c.children.slice(
@@ -49,7 +49,7 @@ const rehypeRemoveEmptyParagraph: Plugin = function rehypeRemoveEmptyParagraph(
 ): Transformer {
   // 最上位の paragraph のみ対象。リストや引用、ネストは扱わない。
   return function transformer(tree: Node): void {
-    if (tree.type === 'root' && tree.children) {
+    if (tree.type === 'root') {
       if (trimBr) {
         hastTrimBr(tree as Root);
       }
