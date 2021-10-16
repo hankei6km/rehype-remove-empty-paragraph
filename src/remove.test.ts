@@ -1,7 +1,7 @@
-import unified from 'unified';
+import { unified } from 'unified';
 import rehypeParse from 'rehype-parse';
 import stringify from 'rehype-stringify';
-import rehypeRemoveEmptyParagraph from '.';
+import rehypeRemoveEmptyParagraph from './remove.js';
 
 describe('removeBlankTransformer()', () => {
   const f = async (html: string): Promise<string> => {
@@ -66,3 +66,5 @@ describe('removeBlankTransformer() with trimBr', () => {
     );
   });
 });
+
+export {};
