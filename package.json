@@ -16,7 +16,7 @@
     "plugin",
     "remove"
   ],
-  "exports": "./index.js",
+  "exports": "./dist/index.js",
   "type": "module",
   "types": "dist/index.d.ts",
   "files": [
